@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+     android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:layout_alignParentTop="true" android:layout_margin="3dp">
+
+        <ImageView
+            android:id="@+id/imageView1" android:src="@drawable/back2"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+
+        <FrameLayout
+            android:layout_width="wrap_content" android:layout_height="50dp"
+            android:id="@+id/frame" android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1" android:layout_toLeftOf="@+id/imageView4">
+            <!--<ImageView
+                android:id="@+id/imageView2" android:src="@drawable/g"
+                android:layout_width="wrap_content" android:layout_height="42dp"
+                android:layout_gravity="center"/>-->
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent" android:layout_height="42dp"
+                android:layout_gravity="center" android:ems="15"
+                android:scrollHorizontally="true" android:singleLine="true" android:lines="1"
+                android:background="@drawable/rounded_edittext"
+                android:hint="제품명으로 검색해보세요."
+                android:paddingLeft="10dp"
+                android:imeOptions="actionSearch"
+                android:inputType="text">
+                <requestFocus />
+            </EditText> <!-- android:ems="3" : 3글자 너비의 에딭텍슽. 3글자 이상 입력은 가능 -->
+            <ImageView
+                android:id="@+id/imageView3" android:src="@drawable/h"
+                android:layout_width="36dp" android:layout_height="36dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="5dp"
+                android:onClick="true"/>
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/imageView4" android:src="@drawable/i"
+            android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="3dp"
+            android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

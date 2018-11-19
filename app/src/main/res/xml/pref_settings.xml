@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Preference android:title="공지사항">
+        	<intent
+            	android:targetClass="com.android.crystalmarket.activity.NotificationActivity"
+            	android:targetPackage="com.android.crystalmarket.activity" />
+	</Preference>
+
+     <PreferenceCategory android:title="개인정보">
+   	  	<Preference
+        	android:title="개인정보 수정" >
+       		<intent
+            	android:targetClass="com.android.crystalmarket.activity.RefreshActivity"
+            	android:targetPackage="com.android.crystalmarket.activity"  />
+    	</Preference>
+
+
+	</PreferenceCategory>
+
+ <PreferenceCategory android:title="알림">
+		 <SwitchPreference
+         android:defaultValue="false"
+         android:key="pushAlert"
+         android:switchTextOff="OFF"
+         android:switchTextOn="ON"
+         android:title="푸시 알림" />
+
+</PreferenceCategory>
+
+
+	<PreferenceCategory android:title="더보기" >
+		<Preference
+			android:title="버전정보" >
+			<intent
+				android:targetClass="info.androidhive.loginandregistration.VersionInfoActivity"
+				android:targetPackage="info.androidhive.loginandregistration"  />
+		</Preference>
+    <Preference
+        android:title="개발자 정보" >
+        <intent
+            android:targetClass="info.androidhive.loginandregistration.MadeByActivity"
+            android:targetPackage="info.androidhive.loginandregistration" />
+    </Preference>
+     
+     <Preference
+        android:title="문의하기">
+		<intent
+			android:targetClass="info.androidhive.loginandregistration.InquireActivity"
+			android:targetPackage="info.androidhive.loginandregistration"/>
+	 </Preference>
+     
+	</PreferenceCategory>
+
+</PreferenceScreen>

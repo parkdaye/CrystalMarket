@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <manifest
+        android:versionName="1.0"
+        android:versionCode="1"
+        package="info.androidhive.loginandregistration"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk
+            android:targetSdkVersion="21"
+            android:minSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="com.android.crystalmarket.app.AppController"
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:allowBackup="true">
+
+    <activity
+        android:name="com.android.crystalmarket.activity.LoginActivity"
+        android:label="@string/app_name"
+        android:windowSoftInputMode="adjustPan"
+        android:launchMode="singleTop">
+
+        <intent-filter>
+            <action
+                android:name="android.intent.action.MAIN"/>
+            <category
+                android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+
+    </activity>
+
+    <activity
+        android:name="com.android.crystalmarket.activity.RegisterActivity"
+        android:label="@string/app_name"
+        android:windowSoftInputMode="adjustPan"
+        android:launchMode="singleTop"/>
+    <activity
+        android:name="com.android.crystalmarket.activity.MainActivity"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"/>
+    <activity
+        android:name="com.android.crystalmarket.activity.CertificateActivity"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        />
+    <activity
+        android:name="com.android.crystalmarket.activity.WaitActivity"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"/>
+        <activity
+            android:name="com.android.crystalmarket.activity.SuccessActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name="com.android.crystalmarket.activity.FailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.android.crystalmarket.activity.UploadActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.android.crystalmarket.activity.CategoryActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.android.crystalmarket.activity.ProductActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.android.crystalmarket.activity.MyPageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.android.crystalmarket.activity.VendorPageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.android.crystalmarket.activity.WriteReview"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.android.crystalmarket.activity.CategorypdActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.android.crystalmarket.activity.SearchActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.android.crystalmarket.activity.SearchpdActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.android.crystalmarket.activity.SettingActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.android.crystalmarket.activity.NotificationActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+
+    </application>
+
+
+</manifest>

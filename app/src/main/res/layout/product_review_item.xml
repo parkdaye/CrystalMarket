@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingLeft="3dp" android:paddingRight="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp" android:orientation="vertical"
+        android:layout_marginTop="1dp">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/profile" android:src="@drawable/profile"
+            android:layout_width="30dp" android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/userNic"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp" android:textStyle="bold"/>
+    </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            style="@style/customRatingBar" />
+
+    <TextView
+        android:id="@+id/review"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="좋아요!"
+        android:textSize="14dp"
+        android:padding="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

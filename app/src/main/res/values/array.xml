@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="s1">
+        <item>카테고리</item>
+        <item>의류</item>
+        <item>가방</item>
+        <item>책</item>
+        <item>잡화</item>
+    </string-array>
+
+
+
+    <integer-array name="resId">
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+
+    </integer-array>
+
+</resources>

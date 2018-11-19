@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewrating"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/rcomm"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="60자 내로 입력해주세요"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_edittext"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록하기"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_corner"
+            android:onClick="true"/>
+    </LinearLayout>
+</LinearLayout>

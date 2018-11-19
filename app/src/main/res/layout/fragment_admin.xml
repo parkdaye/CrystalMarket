@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!--상단 프레임레이아웃 시작-->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="178dp"
+        android:background="#3E3A39">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profile" />
+        <!--설정 아이콘, 누르면 설정페이지로 넘어감-->
+        <ImageView
+            android:id="@+id/setting_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:onClick="true"
+            android:src="@drawable/setting" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="25dp"
+            android:text="아이디/ 닉넴"
+            android:textColor="#ffffff" />
+
+    </FrameLayout>
+    <!--상단  프레임레이아웃 끝-->
+    <!--탭 시작-->
+    <android.support.v4.app.FragmentTabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <!--스크롤 뷰 1,2 묶기 레이아웃 끝-->
+    </android.support.v4.app.FragmentTabHost>
+</LinearLayout><!--전체부분 최상위 레이아웃-->
+</ScrollView>
+

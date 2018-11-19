@@ -1,0 +1,63 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f7"
+    tools:context="com.android.crystalmarket.activity.HomeFragment"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:layout_alignParentTop="true" android:layout_margin="3dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView1" android:src="@drawable/back2"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+            android:gravity = "left"/>
+
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="10dp"
+            android:text="검색어"
+            android:textSize = "23dp"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button">
+
+            <requestFocus />
+        </TextView> <!-- android:ems="3" : 3글자 너비의 에딭텍슽. 3글자 이상 입력은 가능 -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/layout1">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
